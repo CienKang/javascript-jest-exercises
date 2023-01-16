@@ -1,14 +1,16 @@
 function longestStringByFunction(arr) {
-    let answer = "";
+    let answer = '';
 
     arr.forEach((str) => {
-        if (str.length > answer.length)
-            answer = str
-    })
 
-    return answer
+        answer = str.length > answer.length ? str : (
+            str.length === answer.length ? (str[0] < answer[0] ? str : answer) : answer
+        );
+    });
+
+    return answer;
 }
 
-const longestStringByArrow = (arr) => arr.reduce((maxStr, currStr) => maxStr = maxStr.length < currStr.length ? currStr : maxStr, "");
+const longestStringByArrow = (arr) => arr.reduce((maxStr, currStr) => maxStr = maxStr.length < currStr.length ? currStr : maxStr, '');
 
-module.exports = { longestStringByFunction, longestStringByArrow }
+module.exports = { longestStringByFunction, longestStringByArrow };

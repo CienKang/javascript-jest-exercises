@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const { countVowelsInStringFunction, countVowelsInStringArrow } = require('../q8_count_number_of_vowels')
 
 describe('General cases', () => {

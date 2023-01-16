@@ -4,7 +4,7 @@ function checkStringEndsWithFunction(str) {
     if (str.length < 6)
         return false;
 
-    let end = str.slice(str.length - 6, str.length)
+    let end = str.slice(str.length - 6, str.length);
 
     if (end === 'Script')
         return true;
@@ -12,6 +12,6 @@ function checkStringEndsWithFunction(str) {
         return false;
 }
 
-const checkStringEndsWithArrow = (str) => str.slice(str.length - 6, str.length) === 'Script'
+const checkStringEndsWithArrow = (str) => str.slice(str.length - 6, str.length) === 'Script';
 
-module.exports = { checkStringEndsWithFunction, checkStringEndsWithArrow }
+module.exports = { checkStringEndsWithFunction, checkStringEndsWithArrow };

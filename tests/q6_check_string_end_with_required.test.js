@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const { checkStringEndsWithFunction, checkStringEndsWithArrow } = require('../q6_check_string_end_with_required')
 
 

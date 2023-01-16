@@ -19,6 +19,6 @@ const checkLeapYearByArrow = (year) => {
         year % 400 === 0 ? true : false
     )
         : (year % 4 === 0 ? true : false);
-}
+};
 
-module.exports = { checkLeapYearByFunction, checkLeapYearByArrow }
+module.exports = { checkLeapYearByFunction, checkLeapYearByArrow };

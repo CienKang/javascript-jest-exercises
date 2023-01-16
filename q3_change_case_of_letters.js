@@ -1,26 +1,26 @@
 
 function changeCaseByFunction(str) {
-    let answer = ""
+    let answer = '';
     for (let index = 0; index < str.length; index++) {
         if (str[index] >= 'a' && str[index] <= 'z')
             answer += str[index].toUpperCase();
         else answer += str[index].toLowerCase();
     }
 
-    return answer
+    return answer;
 }
 
 const changeCaseByArrow = (str) => {
 
-    let answer = ""
+    let answer = '';
     for (let index = 0; index < str.length; index++) {
         if (str[index] >= 'a' && str[index] <= 'z')
             answer += str[index].toUpperCase();
         else answer += str[index].toLowerCase();
     }
 
-    return answer
+    return answer;
 
-}
+};
 
-module.exports = { changeCaseByFunction, changeCaseByArrow }
+module.exports = { changeCaseByFunction, changeCaseByArrow };

@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const { findLargestEvenNumberByArrow, findLargestEvenNumberByFunction } = require('../q1_largest_even_number')
 
 describe('all positive numbers', () => {
