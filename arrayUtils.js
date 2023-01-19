@@ -1,3 +1,4 @@
+const {DivisionByZeroError} = require('./error');
 
 const doubleNumbers = (arr) => {
 
@@ -26,10 +27,20 @@ const tripleNumberAndFilterEven = (arr) => {
 
     return arr.reduce((newArr, element) => {
         if ((element * 3) % 2 === 0)
-            return [...newArr,3*element];
+            return [...newArr, 3 * element];
         return newArr;
     }, []);
 };
 
-console.log(tripleNumberAndFilterEven([1, 2, 3, 4]));
-module.exports = { doubleNumbers, tripleNumberAndFilterEven };
+const divideNumbers = (a, b) => {
+
+    if (b === 0)
+        throw new DivisionByZeroError('Cannot divide be 0');
+
+    if (typeof (a) !== 'number' || typeof (b) !== 'number')
+        throw new Error('Both a and b should be of type number');
+
+    return Math.floor(a / b);
+};
+
+module.exports = { doubleNumbers, tripleNumberAndFilterEven, divideNumbers };
